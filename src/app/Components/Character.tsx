@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import defaultImage from '../assets/pottervector.jpg';
+import defaultImage from '../../assets/pottervector.jpg';
 
 // Define the interface for the character data
 interface CharacterData {
@@ -47,7 +47,7 @@ const Character: React.FC = () => {
           {data.map((item, index) => (
             <div
               key={index}
-              className="hover:scale-105 transition-all duration-200 bg-white rounded-lg overflow-hidden shadow-lg shadow-orange-500"
+              className="hover:scale-105 transition-all duration-200  rounded-lg overflow-hidden shadow-lg shadow-orange-500"
             >
               <img
                 src={item.image || defaultImage}

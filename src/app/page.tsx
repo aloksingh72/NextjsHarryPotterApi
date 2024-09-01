@@ -6,8 +6,8 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import Book from './Components/Book';
 import Character from "./Components/Character";
-// import Spell from "./Components/Spell";
-// import Movies from "./Components/Movies";
+import Spell from "./Components/Spell";
+import Movies from "./Components/Movies";
 import Navbar from './Components/Navbar';
 
 const App: React.FC = () => {
@@ -18,9 +18,10 @@ const App: React.FC = () => {
         {/* Uncomment and use Routes as needed */}
         <Routes>
           <Route path="/" element={<Book />} />
-          {/* <Route path="/spell" element={<Spell />} /> */}
+         
           <Route path="/character" element={<Character />} />
-          {/* <Route path="/movies" element={<Movies />} /> */}
+           <Route path="/spell" element={<Spell />} />
+          <Route path="/movies" element={<Movies />} />
         </Routes>
       </div>
     </Router>
